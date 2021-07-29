@@ -42,8 +42,8 @@ var questions = [
         answer : "console.log"    
     },
 ]
-btnStart.addEventListener("click", starQuiz);
-function starQuiz(){
+btnStart.addEventListener("click", startQuiz);
+function startQuiz(){
     if(storedScores !==null) {
         allScores = storedScores;
     }
@@ -58,11 +58,11 @@ function starQuiz(){
 
     gametime()
 }
+
 btnScore.addEventListener("click" , function(){
     let name = document.getElementById("inputScore").value
     scorePage(name, count)
 });
-// Time set
 
 function gametime(){
 
@@ -70,7 +70,6 @@ function gametime(){
         timer.innerText = count
          count--;
         }, 1000);
-
 }
 
 function scorePage(a, b) {
@@ -91,7 +90,6 @@ function displayQuestion(question){
      var button =document.createElement("button")
     button.className="btn-primary btn-block text-left"
     button.innerText=element
-    // questionanswers.innerHTML=""
     questionanswers.appendChild(button)
     button.addEventListener("click", displaynextQuestion)
     });
@@ -114,12 +112,9 @@ function displaynextQuestion(e){
     }else{
         console.log("endgame")
         endgame()
-        
-
     }
-    
-     
 }
+
 function correction(response){
     
     if(response){
@@ -138,6 +133,7 @@ function correction(response){
         }, 1000);
 
 }
+
  function endgame (){
     // btnStart.classList.add("d-none")
     myScore.innaText = count
