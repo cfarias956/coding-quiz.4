@@ -6,7 +6,7 @@ body,html{
 }
 
 .game-box{
-    background: #f59ed1;
+    background:#ffff00;
     box-shadow: 0 10px 20px rgba(68, 8, 8, 0.19), 0 6px 6px rgba(0.,0,0,0.23);
 }
 
@@ -30,4 +30,5 @@ body,html{
 #code-title{
     text-align: center;
     font-weight: bold;
+
 }

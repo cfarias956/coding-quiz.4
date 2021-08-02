@@ -17,29 +17,29 @@ var storedScores = JSON.parse(localStorage.getItem("userData"));
 
 var questions = [
     {
-        title: "Commonly used data type Do Not include:---",
-        choices: ["strings","booleance","alerts", "numbers"],
-        answer : "alerts"    
+        title: "Inside which HTML element do we put JavaScript?",
+        choices: ["<script>","<head>","<meta>", "<style>"],
+        answer : "<script>"    
     },
     {
-        title: "The condition in an if/else statement is enclosed within:---",
-        choices: ["quotes","Curly brackets","parentheses", "square brackets"],
-        answer : "parentheses"    
+        title: "Which of the following is not JavaScript Data Types?",
+        choices: ["Undefined","Number","Boolean", "Float"],
+        answer : "Float"    
     },
     {
-        title: "Arrays in JavaScript can be used to store:---",
-        choices: ["numbers and strings","others Arrays","booleances", "all of the above"],
-        answer : "all of the above"    
+        title: "What are the types of pop up boxes available in Javascript?",
+        choices: ["Alert","Prompt","Confirm", "All of the above"],
+        answer : "All of the above"    
     },
     {
-        title: "String values must be enclosed within --- when being assigned to variables ",
-        choices: ["commas","curly brackets","quotes","parentheses"],
-        answer : "quotes"    
+        title: "Which of the following is the correct statement for commenting in JavaScript?",
+        choices: ["/*this is a comment*/","$This is a comment$","//This is a comment","\\This is a comment"],
+        answer : "//This is a comment"    
     },
     {
-        title: "A very useful tool used during development and debugging for printing content to the debugger is:---",
-        choices: ["JavaScript","terminal/bash","alerts", "console.log"],
-        answer : "console.log"    
+        title: "The “function” and ” var” are known as:",
+        choices: ["Keywords","Declaration statements","Values", "Prototypes"],
+        answer : "Declaration statements"    
     },
 ]
 btnStart.addEventListener("click", startQuiz);
